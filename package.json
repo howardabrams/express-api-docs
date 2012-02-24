@@ -1,0 +1,25 @@
+{
+  "author": "Howard Abrams <howard.abrams@gmail.com> (http://www.github.com/howardabrams)",
+  "name": "express-api-docs",
+  "description": "Generates an API document from code built with Express",
+  "version": "0.0.1",
+  "homepage": "http://www.github.com/howardabrams/express-api-docs",
+  "keywords": [
+               "nodejs",
+               "express",
+               "rest",
+               "documentation",
+             ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/howardabrams/express-api-docs.git"
+  },
+  "main": "./make-api-docs.js",
+  "engines": {
+    "node": ">=0.6"
+  },
+  "dependencies" : {
+    "dox": ">=0.2.0"
+    // Pick a template language to use...
+  } 
+}
