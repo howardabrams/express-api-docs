@@ -8,9 +8,9 @@
                "nodejs",
                "express",
                "rest",
-               "documentation",
+               "documentation"
              ],
-    "repository": {
+  "repository": {
         "type": "git",
         "url": "git://github.com/howardabrams/express-api-docs.git"
   },
@@ -19,7 +19,7 @@
     "node": ">=0.6"
   },
   "dependencies" : {
-    "dox": ">=0.2.0"
-    // Pick a template language to use...
+    "dox": ">=0.2.0",
+    "handlebars": ">=1.0.5beta"
   } 
 }

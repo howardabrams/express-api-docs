@@ -65,7 +65,7 @@ exports.getUser = function(request, response) {
  *       'phone' : '534-284-7988'
  *     }
  *
- * Response: 
+ * Response:
  * 
  *  Returns the added user's information with an additional `id`
  *  value.
