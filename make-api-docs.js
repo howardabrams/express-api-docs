@@ -99,7 +99,8 @@ var analyzeFile = function(file) {
     var js = fs.readFileSync(filename, 'utf8');
     var d = dox.parseComments(js);
     d.forEach( function(entry) {
-        if (entry.ctx && entry.ctx.type == 'method') {
+        if (   entry.ctx && 
+             ( entry.ctx.type == 'method' || entry.ctx.type == 'function') ) {
             // console.log("Working on API docs for route: %s", entry.ctx.name);
             createRoute(entry.ctx.name, entry);
         }
