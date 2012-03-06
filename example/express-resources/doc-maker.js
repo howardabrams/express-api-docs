@@ -6,6 +6,6 @@
  *       var api = require('express-api-docs');
  */
 
-var api = require('../make-api-docs');
+var api = require('../../make-api-docs');
 
-api.generate('router.js', 'public/api.html');
+api.generate('app.js', 'public/api.html');
