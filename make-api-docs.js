@@ -253,19 +253,19 @@ var createResource = function(label, entry) {
             break;
         case 'show':
             method = 'GET';
-            route  = '/' + label + '/ID';
+            route  = '/' + label + '/&lt;ID&gt;';
             break;
         case 'edit':
             method = 'GET';
-            route  = '/' + label + '/ID/edit';
+            route  = '/' + label + '/&lt;ID&gt;/edit';
             break;
         case 'update':
             method = 'PUT';
-            route  = '/' + label + '/ID';
+            route  = '/' + label + '/&lt;ID&gt;';
             break;
         case 'destroy':
             method = 'DELETE';
-            route  = '/' + label + '/ID';
+            route  = '/' + label + '/&lt;ID&gt;';
             break;
         default:
             return;
