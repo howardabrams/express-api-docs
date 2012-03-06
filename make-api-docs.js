@@ -49,13 +49,13 @@ exports.generate = function(inputFile, outputFile) {
     var data = fs.readFileSync (inputFile, 'utf8');
     parseRoutes(data);
 
-    if (files.length > 0) {
-        console.log(files);
-    }
-    if (resources.length > 0) {
-        console.log(resources);
-    }
-    console.log(funcs);
+    // if (files.length > 0) {
+    //     console.log(files);
+    // }
+    // if (resources.length > 0) {
+    //     console.log(resources);
+    // }
+    // console.log(funcs);
 
     files.forEach( function(file) {
         analyzeFile(file);
@@ -132,21 +132,15 @@ var analyzeFile = function(file) {
     if ( ! /\.js$/.test(filename) ) {
         filename = filename + '.js';
     }
-    
-    try {
-        var js = fs.readFileSync(filename, 'utf8');
-        var d = dox.parseComments(js);
-        d.forEach( function(entry) {
-            if (   entry.ctx && 
-                    ( entry.ctx.type == 'method' || entry.ctx.type == 'function') ) {
-                // console.log("Working on API docs for route: %s", entry.ctx.name);
-                createRoute(entry.ctx.name, entry);
-            }
-        });
-    }
-    catch (err) {
-        console.warn( err );
-    }
+    var js = fs.readFileSync(filename, 'utf8');
+    var d = dox.parseComments(js);
+    d.forEach( function(entry) {
+        if (   entry.ctx && 
+             ( entry.ctx.type == 'method' || entry.ctx.type == 'function') ) {
+            // console.log("Working on API docs for route: %s", entry.ctx.name);
+            createRoute(entry.ctx.name, entry);
+        }
+    });
 };
 
 
