@@ -2,7 +2,7 @@
   "author": "Howard Abrams <howard.abrams@gmail.com> (http://www.github.com/howardabrams)",
   "name": "express-api-docs",
   "description": "Generates an API document from code built with Express",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "http://www.github.com/howardabrams/express-api-docs",
   "keywords": [
                "nodejs",

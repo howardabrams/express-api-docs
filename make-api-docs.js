@@ -90,7 +90,7 @@ var writeFile = function(file) {
 
 var parseRoutes = function(data) {
     data.split(/\n+/).forEach( function(line) {
-        var r = /^\s*var\s*([A-Za-z0-9]+)\s*=\s*require\s*\(['"]([^'"]+)['"]\s*\)\s*;/.exec(line);
+        var r = /^\s*var\s*([A-Za-z0-9_]+)\s*=\s*require\s*\(['"]([^'"]+)['"]\s*\)\s*;/.exec(line);
         if ( r ) {
             files.push({
                 label: r[1],
