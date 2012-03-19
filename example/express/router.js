@@ -18,6 +18,8 @@ module.exports.setup = function( app ) {
     app.get(   '/user',        user.getAllUsers);  
     app.post(  '/user',        user.createUser);  
     app.get(   '/user/:email', user.getUser ); 
-    app.delete('/user/:email', user.deleteUser);        
+    /*
+    app.delete('/user/:email', user.deleteUser);
+    */        
     app.put(   '/user/:email', user.updateUser );
 };

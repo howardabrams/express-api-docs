@@ -233,7 +233,7 @@ var analyzeResource = function(resource) {
  * @returns {Object} a model entry that can be pushed into the `output`
  */ 
 
-var createResource = function(label, entry) {
+function createResource(label, entry) {
     var name   = entry.ctx.name;
     var method = 'GET';
     var route  = '/' + label;

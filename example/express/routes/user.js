@@ -43,7 +43,7 @@
  */
 
 exports.getUser = function(request, response) {
-    var query = setQuery(request.params.email);
+    // var query = setQuery(request.params.email);
     // database.find(collection, query, request.query, function(err, items) {
     //     // ...
     // });
@@ -161,7 +161,7 @@ exports.getAllUsers = function(request, response) {
  */
 
 exports.deleteUser = function(request, response) {
-    var query = setQuery(request.params.email);
+    // var query = setQuery(request.params.email);
     // database.delete(collection, query, function(err, items) {
     //     ...
     // });
@@ -219,7 +219,7 @@ exports.deleteUser = function(request, response) {
  */
 
 exports.updateUser = function(request, response) {
-    var query = setQuery( request.params.email );
+    // var query = setQuery( request.params.email );
     // database.update( collection, query, request.body, function( err, objects ) {
     //     ...
     // });
